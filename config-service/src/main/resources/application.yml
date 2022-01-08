@@ -1,0 +1,18 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: config-service
+  profiles:
+    active: native
+  cloud:
+    config:
+      server:
+        native:
+          search-locations: file:///C:/Work/native-file-repo
+        git:
+#          uri: file:///C:/CloudStudy/git-local-repo
+          uri: https://github.com/LeeSungKi/spring-cloud-config.git
+#          private? ?????
+#          username: [your usernamd]
+#          password: [your password]
